@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class Lista {
@@ -13,7 +13,7 @@ public class Lista {
         if (this.list.isEmpty()){
             System.out.println("A lista esta vazia.");
         }else{
-            Collections.sort(this.list);
+            list.sort(Comparator.comparing(Tarefa::data));
             for (Tarefa i:this.list){
                 System.out.println(i);
             }
@@ -28,5 +28,6 @@ public class Lista {
         System.out.println("Tarefa removida com sucesso!");
         this.list.remove(remover);
     }
+
 
 }
