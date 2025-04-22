@@ -8,7 +8,12 @@ public class Main {
         System.out.println("Digite 10 para iniciar o programa:");
         String minhaEsco = sc.nextLine();
         while (!minhaEsco.equals("-1")){
-            System.out.println("Funções:Adicionar, Mostrar lista, Remover e -1 para finalizar:");
+            System.out.println("""
+                    Funções:
+                    Adicionar,
+                    Mostrar lista,
+                    Remover
+                    """);
             minhaEsco = sc.nextLine();
             switch (minhaEsco){
                 case "Adicionar":
