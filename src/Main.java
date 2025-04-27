@@ -30,7 +30,7 @@ public class Main {
                     l1.mostrarLista();
                     break;
                 case"Remover":
-                    System.out.println("Digite o index da tarefa:");
+                    System.out.println("Digite o índice da tarefa:");
                     int index = sc.nextInt();
                     l1.removerTarefa(index);
                     minhaEsco = sc.nextLine();
